@@ -12,7 +12,7 @@ if ($sesion->existeSesion()) {
   if ($sesion->existeUsuario($usuario, $clave)) {
     require('controlador/gestionProducto.php');
   }else {
-    $errorLogin = "<p>Contraseña o usuario incorrectos, verifique los datos y vuelva acceder</p>";
+    $errorLogin = "<p>Verifique los credenciales e intente nuevamente :(</p>";
     require('vista/login.php');
   } 
 } else {

@@ -9,7 +9,6 @@
   <center>
     <form action="" method="POST">
       <h4>Login Usuario</h4>
-      <?php if(isset($errorLogin)) echo $errorLogin; ?>
       <fieldset class="inicio-session">
         <label>Nombre de Usuario: </label>
         <input type="text" name="usuario">
@@ -17,6 +16,7 @@
         <input type="password" name="contrasenia">
         <input class="iniciar-session" type="submit" value="Login">
       </fieldset>
+      <?php if(isset($errorLogin)) echo $errorLogin; ?>
     </form>
   </center>
 </body>
