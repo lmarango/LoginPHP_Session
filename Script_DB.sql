@@ -15,8 +15,8 @@ CREATE TABLE usuarios (
   nombre varchar(100) NOT NULL,
   clave varchar(20) NOT NULL,
   rol varchar(10) NOT NULL CHECK (rol in ('admin', 'no-admin')),
-  PRIMARY KEY (usuario))
-);
+  PRIMARY KEY (usuario)
+  )
 
 INSERT INTO usuarios VALUES ('lmarango', 'Luis Manuel', '123', 'admin');
 INSERT INTO usuarios VALUES ('damunoz', 'Daniel Alejandro', '321', 'no-admin');
